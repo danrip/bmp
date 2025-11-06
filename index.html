@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Equipment Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/wtf_wikipedia"></script>
+</head>
+<body>
+    <h1>Russian Equipment Flashcards</h1>
+    <div class="controls">
+        <label for="category-selector">Category:</label>
+        <select id="category-selector">
+            <option value="all">All</option>
+        </select>
+        <label for="subcategory-selector">Subcategory:</label>
+        <select id="subcategory-selector">
+            <option value="all">All</option>
+        </select>
+    </div>
+    <div id="flashcard-container">
+        <div id="flashcard">
+            <div class="card-inner">
+                <div class="card-front">
+                </div>
+                <div class="card-back">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="next-button">Next</button>
+
+    <div id="loading-spinner" class="spinner-hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
